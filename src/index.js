@@ -6,7 +6,7 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers/index';
-import history from './utils/history'
+
 import './index.css';
 import App from './App';
 const initalState = {}
@@ -17,9 +17,9 @@ const initalState = {}
 ReactDOM.render(
  
     <Provider store={store} >
-           <Router history={history}>
+         
         <App />
  
-    </Router>
+ 
     </Provider>
 , document.getElementById('root'));

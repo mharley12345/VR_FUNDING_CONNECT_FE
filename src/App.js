@@ -11,6 +11,7 @@ import PrivateRoute from './Auth/PrivateRoute';
 import Nav from './layout/NavBar'
 import AddProject from './layout/AddProject'
 import User from './layout/User'
+import history from  './utils/history'
 // import CreateProfile from './components/Login/Signup'
 function App(props) {
   const [userToken, setUserToken] =useState('')
@@ -22,7 +23,7 @@ function App(props) {
   return (
 
 
-    <Router>
+    <Router history={history}>
 
   
       <Nav className='navbar'/>
